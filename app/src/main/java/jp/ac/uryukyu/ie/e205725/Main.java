@@ -6,6 +6,7 @@ public class Main {
      System.out.println("すごろくゲームを始めます");
      System.out.println("今回の目的地は"+Sugoroku.university+"です");
      Sugoroku.banmen();
+     Sugoroku.game();
      
 
     }

@@ -17,7 +17,27 @@ public class Sugoroku {
         }
         System.out.print(university);
         System.out.println("");
-        
     }
-    
+    public static void game(){
+        while (true){
+            System.out.println("0を押すとすごろくを投げるよ");
+            Scanner scan = new Scanner(System.in);
+            int num = scan.nextInt();
+            if (num == 0){
+                int r = new java.util.Random().nextInt(7);
+                int sugoroku = r + 1;
+                System.out.println("あなたの出した目は"+ sugoroku + "です");
+                player1 += sugoroku;
+                if (player1 > 50){
+                    int back = player1 - 50;
+                    player1 = 50-back;
+                }
+                banmen();
+                if (player1 == 50){
+                    System.out.println("おめでとうございます"+university + "に到着しました");
+                    break;
+                }
+            }
+        }
+    }
 }
