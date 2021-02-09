@@ -7,6 +7,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SugorokuTest {
-    @Test 
-    
+    @Test
+void resultTest(){
+Sugoroku.money1 = 1000000;
+Sugoroku.money2 = 1500000;
+Sugoroku.result();
+
+
+}
+
+
 }
